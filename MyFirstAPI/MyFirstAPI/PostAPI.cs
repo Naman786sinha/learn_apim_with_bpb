@@ -22,7 +22,7 @@ namespace MyFirstAPI
             _logger = log;
         }
 
-        [FunctionName("Read")]
+        [FunctionName("Create")]
         [OpenApiOperation(operationId: "Run", tags: new[] { "FirstAPI" })]
 
         [OpenApiSecurity("function_key", SecuritySchemeType.ApiKey, Name = "code", In = OpenApiSecurityLocationType.Query)]       
